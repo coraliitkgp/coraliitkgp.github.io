@@ -8,28 +8,37 @@
 
     <!-- Include Tailwind CSS stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
-<body class="bg-gray-100 dark:bg-gray-800">
+<body class="transition duration-500 ease-in-out bg-white dark:bg-gray-800 text-black dark:text-white">
 
-    <!-- Navigation Bar -->
     <nav class="bg-blue-500 p-4 text-white">
-        <div class="container mx-auto">
-            <!-- Your navigation content goes here -->
+        <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-xl font-semibold">Your Company Name</h1>
-            <!-- Add additional navigation links as needed -->
+            
         </div>
     </nav>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    
 
     <!-- Main Content Area -->
     <div class="container mx-auto mt-8">
 
         <!-- Student's Section -->
         <section class="bg-white dark:bg-gray-900">
-            <div class="container px-6 py-10 mx-auto">
+            <div class="container px-6 py-6 mx-auto">
                 <h1 class="text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Batch <span class="text-blue-500">2022-24</span></h1>
         
-                <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+                <p class="max-w-2xl capitalize mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
                     Meet Our Rising Stars: Unveiling a Tapestry of Talents and Achievements <br>
                     Alongside their ongoing projects.
                 </p>
@@ -37,7 +46,7 @@
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
                     <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
                         <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://raw.githubusercontent.com/brijeshpandit/coral-webpage/b510246b478517c7830deff513db0383e54268b3/assets/1679502005413__01%20-%20Brijesh%20Pandit.jpg" alt="">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/1679502005413__01 - Brijesh Pandit.jpg" alt="">
         
                             <div class="mt-4 sm:mx-4 sm:mt-0">
                                 <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Brijesh Pandit</h1>
@@ -55,7 +64,7 @@
                         </p>
 
                         <div class="flex mt-4 -mx-2">
-                            <a href="https://www.linkedin.com/in/brijesh-pandit" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                            <a href="https://www.linkedin.com/in/brijesh-pandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
                                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -64,7 +73,7 @@
                                 </svg>
                             </a>
         
-                            <a href="https://github.com/brijeshpandit" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                            <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
                                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -73,7 +82,7 @@
                                 </svg>
                             </a>
 
-                            <a href="#" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                            <a href="assets/resumes/Brijesh_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
                                 Resume
                             </a>
                         </div>
