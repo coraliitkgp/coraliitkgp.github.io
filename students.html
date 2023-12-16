@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Portfolio</title>
+
+    <!-- Include Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="transition duration-500 ease-in-out bg-white dark:bg-gray-800 text-black dark:text-white">
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/photos/Coral Name.png" class="h-12" alt="Coral Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <!-- <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            </li> -->
+            <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+  
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    
+
+    <!-- Main Content Area -->
+    <div class="container mx-auto mt-8">
+
+        <!-- Student's Section -->
+        <section class="bg-white dark:bg-gray-900">
+            <div class="container px-0 py-0 mx-auto">
+                <h1 class="text-2xl font-bold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Batch <span class="text-blue-500">2022-24</span></h1>
+        
+                <p class="max-w-2xl capitalize mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+                    Meet Our Rising Stars: Unveiling a Tapestry of Talents and Achievements <br>
+                    Alongside their ongoing projects.
+                </p>
+        
+                <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+                    <!-- Brijesh -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/1679502005413__01 - Brijesh Pandit.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Brijesh Pandit</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">“I'm a tech enthusiast at core, diving deep into the world of data science and also keen on sustainable innovations.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">AI/ML techniques for interpolation and downscaling of ocean observations in coastal regions.</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Altimeter ocean observations are notably scarce in coastal regions, necessitating the application of AI/ML techniques for data retrieval.
+                            Through the utilization of numerical models and tide gauge stations, machine learning regression techniques are actively employed for interpolation and downscaling.
+                            This pivotal undertaking plays a crucial role in identifying vulnerable zones within the context of climate change scenarios.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <a href="https://www.linkedin.com/in/brijesh-pandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+        
+                            <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Brijesh_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Nitin -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/DSC_2210 - Nitin Sharma.JPG" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Nitin Sharma</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I am a skilled data scientist with a strong background in machine learning and data analysis. 
+                                    My experience includes leveraging advanced statistical techniques to extract meaningful insights from complex datasets. 
+                                    Eager to contribute my expertise to a dynamic team in a data science role.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Analysis and Validation of Trends of Significant wave height using Altimeter Satellite Dataset.</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            The main objective of this project is to analyse wind patterns that can validate our SWH trends for Indian Ocean region (Ocean Basins).
+                            Performed extensive Exploratory Data Analysis (EDA) on wind data to glean insights, now spearheading the advancement of a Convolutional Neural Network (CNN) algorithm for generating downscaled climate projections with a focus on precision and scalability.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin Link -->
+                            <a href="https://www.linkedin.com/in/nitin-sharma10598/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <!-- Github Link -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Nitin_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Parag -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/passport236 - Parag Gawai.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Parag Gawai</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “M. Tech student with the 9.29 CGPA. Highly interested in Python, data science, data analytics, machine learning, deep learning.
+                                    With this knowledge, was able to get the internship at ISRO, where I worked as a data science intern. 
+                                    Performed few projects in the domain. Have knowledge of Docker, AWS, Flask.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300 normal-case">
+                            Satellite and model current data validation with in-situ drifter data</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            To check how accurate satellite and mathematical model readings for the current are. 
+                            Analysis is done for the Indian ocean, Arabian sea, Bay of Bengal, Equatorial Indian ocean for the year 2020. 
+                            Analysis is based on R squared and RMSE.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin Link -->
+                            <a href="https://www.linkedin.com/in/nitin-sharma10598/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <!-- Github Link -->
+                            <a href="https://github.com/ParagGawai" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Parag_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- S Sravan Naik   -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/DSC_0055 - Sravan Naik.JPG" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    S Sravan Naik </h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I am passionately enthusiastic about contributing to efforts aimed at addressing climate change through nature-based solutions and carbon offset initiatives. 
+                                    I am eager to work towards sustainable practices.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Development of new high resolution temperature dataset for Northeast Indian region</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            The aim of the project is to downscaling of  temperature and precipitation gridded data set from High resolution to 0.1 degree resolution.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/sravan-naik-b2007b266/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Sravan CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>                    
+                    
+
+                    <!-- AMITESH RAY  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/AMITESHRAY - Amitesh Ray.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Amitesh Ray</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I completed my BSc in Mathematics in 2020 and, my MSc in Mathematics in 2022, I have an interest in CFD, Data analysis, Monsoon depression, and Data Science.
+                                    I had an internship in the Indian Institute of Tropical Meteorology Pune, where I worked on Monsoon depression and validated the data using Python Nd NCl language.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Forest Fire Modelling Using FDS and WFDS Fire Model</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            We have field fire data and we have to simulate using CFD software to valid the data and understand the fire spread in that particular area based on the different atmospheric parameters.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="www.linkedin.com/in/amitesh-ray-659a25250" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <a href="https://github.com/AmiteshRay/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Amitesh Ray_cV .pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Pallabi Manna  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/PALLANI MANNA PHOTO - PALLABI MANNA.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Pallabi Manna</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “With a strong foundation in computer science and a proven track record of developing efficient and scalable software solutions, 
+                                    I am eager to contribute my technical expertise to your team.
+                                    My passion for solving complex problems and my dedication to producing high-quality code make me a valuable candidate for this role.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Prediction of Monthly Sea Level using different ML methods</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Collected data from PSMSL website. Filled gaps and predicted using RF, KNN. RF gives more accuracy than KNN.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/pallabi-manna-6aa976263/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Pallabi CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Sairam -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/IMG_20231015_043455 - VEDIRESWARAPU NAGA DURGA SAIRAM.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Sairam Vedireswarapu</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Upcoming Analyst at HSBC, Generative AI Intern at Ford Motor Company.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            AI assisted Carbon Footprint Calculator</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Developing an AI based tool for carbon accounting that automates and enhances emission reporting and to reduce errors.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/sairam-vnd/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Sairam_Vedireswarapu_cv88-28.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Snehal Singh  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/+91 89998 45665 20231210_120053 - SNEHAL SINGH.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Snehal Singh</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Upcoming Analyst at General Mills. Interning at VA Labs as Product Manager. Experienced in UI UX and has a deep interest in Thermodynamics.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Mimicking Dispersion of Lagrangian Drifters by Eddies</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            To track oil droplet's acceleration in water and using the data to predict further motion using ARIMA while optimizing p, d, and q values for accuracy enhancement of the model.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/amitesh-singh-323aa830/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/22CL60R09 Snehal - Analyst.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Amitesh Singh  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/20200826_154740 - Amitesh.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Amitesh Singh</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Proficient in conducting in-depth environmental impact assessments through advanced data analysis techniques. 
+                                    Skilled in uncovering correlations between human behavior and environmental changes, particularly focusing on air quality dynamics. 
+                                    Adept at deriving strategic insights crucial for informed decision-making in sustainability initiatives.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Examining India's Post-Lockdown Impact on the Environment Using Google Mobility Data</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            This project investigates the environmental repercussions of India's post-lockdown phases, leveraging Google Mobility Data. 
+                            Analyzing the relationship between human movement and environmental shifts, the study explores the impact on air quality, 
+                            providing insights crucial for informed policymaking and sustainable development initiatives.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/amitesh-singh-323aa830/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <!-- <a href="assets/resumes/Brijesh_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a> -->
+                        </div>
+
+                    </div>
+
+                    <!-- Hari S  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/visa-2986 - hari srinivasan.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Hari S.</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I am a self-motivated and hardworking individual pursuing an M.Tech. project thesis at Technical University Dresden Germany, a prestigious university, through the DAAD scholarship facilitated between IIT and TU9 universities.
+                                    I have got two and a half year work experience as Senior Engineer NPD-STA in Simpson & Co. Ltd. and Three months Internship experience as Machine Learning Intern in ZF CVCS”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Forecasting Climate Class and Generating Climate Boundary Maps of India</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Forecasting Climate Class of India till 2040 with the help of statistical time series Winters Model (Triple Exponential Smoothing), 
+                            Machine Learning (Multiple Linear Regression, Polynomial Regression, Regularized Regression, Decision Tree, SVR, Random Forest, Bagging and Boosting) 
+                            and Deep Learning Models (ANN, RNN-LSTM and CNN) and Generating Climate Boundary Maps with QGIS/ArcGIS.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <!-- <a href="www.linkedin.com/in/amitesh-ray-659a25250" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Hari _CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Akshay -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/Akshay photo - Akshay R.Bhiwagade.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Akshay Ramesh Bhivagade</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Hello, I'm Akshay Ramesh Bhivagade, a highly motivated and detail-oriented professional with a robust background in Machine Learning, Data Science, QGIS, and ArcMap. 
+                                    I come with valuable experience, having served as a Data Science intern at MRC Pune for 2 months. 
+                                    I am enthusiastic about contributing my skills and passion for the field to a role in Machine Learning and Data Science, and I look forward to the opportunity to make a meaningful impact.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Flood vulnerability mapping for Bihar state</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            The aim of this study to map highly flood vulnerable zone in the Bihar state in order to make informed decision making and effective flood risk management.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/akshay-bhivagade/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <a href="https://github.com/akshayrbhm" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Akshay_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Mohd Athar Ansari    -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/IMG_20220715_104839_628 - MOHD ATHAR ANSARI.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Mohd Athar Ansari  </h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Armed with a robust background in machine learning, data analysis, and a versatile skill set in Python programming, I've undertaken impactful projects ranging from landslide prediction and duplicate question detection to placement forecasting using ML techniques. 
+                                    I've also contributed insights to diverse domains through internships, such as machine learning-based nutrient estimation for rivers and crafting data-driven coursework for educational platforms.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Landslide assessment using Analytic hierarchy process</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Developed a landslide susceptibility map using the Analytic Hierarchy Process for Himachal Pradesh. The map shows regions highly prone to landslides and also highlights areas less susceptible to them.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/mohdatharansari/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <a href="https://github.com/mohdAtharansari" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Athar_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Pankaj -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/photos/2 - Pankaj45.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Pankaj Kumar</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “My name is Pankaj Kumar.I am pursuing study M. Tech in IIT Kharagpur.My B.Tech degree from GJU from Hissar.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300 normal-case">
+                            pCO2 measure in Northern Indian Ocean</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            pCO2 measure with northern Indian Ocean with the help of alkanity and pH range data.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin Link -->
+                            <!-- <a href="https://www.linkedin.com/in/nitin-sharma10598/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+                            
+                            <!-- Github Link -->
+                            <!-- <a href="https://github.com/ParagGawai" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Pankaj_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ritesh Kumar Gupta  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/img_1_1696251260890 - RITESH KUMAR GUPTA.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Ritesh Kumar Gupta</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “This is Ritesh Kumar Gupta,l have done b.tech in mechanical engineering and right now persuing M. Tech in IIT Kharagpur.
+                                    I am very much interested to work in field of renewable energy ”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Renewal Energy</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Increase the power output and efficiency of wind turbine.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/akshay-bhivagade/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Akshay_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Ujjwal Bera -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/PHOTO - Ujjwal Bera.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Ujjwal Bera</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Hi, My name is Ujjwal Bera and I'm a dedicated professional with a passion for working around climate data and analysis of it using different Statistics and ML algorithms. 
+                                    With a solid background in Earth System Science and Technology, I thrive on tackling climate challenges and bringing innovative solutions to the table. 
+                                    I'm eager to leverage my skills and contribute effectively for the betterment of our society.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Compound Extreme Event Analysis using Statistics and Probabilistic ML Model</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            First we did data collection from IMD website for Rainfall, Maximum Temperature and Minimum Temperature and Identifying simultaneous extreme event among 318 locations in India. 
+                            Then We will trying to predict extremes using various probabilistic ML models.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/ujjwal-bera-8b5bbb136/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <a href="assets/resumes/Ujjwal _CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- MANOJKUMAR M -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/photo - Manoj kumar.JPG" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Manojkumar M.</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I hold a Bachelor's degree in Civil Engineering and Presently doing masters in Earth System Science and Technology possess expertise in Remote sensing applications, specializing in water resources. 
+                                    Proficient in Python and software's like QGIS, ARCGIS, ENVI, and Excel, my technical skills, combined with a strong academic foundation, 
+                                    make me a valuable candidate ready to contribute to the team's success in tackling complex challenges.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Assessing the Impact of Meteorological Drought on Hydrological and Agricultural Drought </p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            This study focuses Using remote sensing to monitor meteorological, hydrological, and agricultural drought. 
+                            Through indices like SWI, SPI, and NDVI, it reveals meteorological drought as the direct cause of hydrological and agricultural drought in the region.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="www.linkedin.com/in/manojkumar-m-266a79214" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <!-- <a href="assets/resumes/Ujjwal _CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a> -->
+                        </div>
+
+                    </div>
+
+                    <!-- Saikumar -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/photos/IMG_20230918_223011 - Yatirajula Sai Kumar.png" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Yatirajula Sai Kumar</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I am dedicated and hardworking engineer looking for new challenges and opportunities in the earth system science and technology, remoste sensing, Data Science fields”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Solar Irradiance and Cloud Motion Vector Estimation from Satellite Images</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Using EUMETSAT Rapid scan High rate SEVIRI image data and solar irradiance hourly data, masking, thresholding and calibration for data preprocessing for the 
+                            extraction motion vector fields using opencvs optical flow method for a consecutive time period vis, ir, water vapor channels image data and forcasting upto 1 hour using neural networks.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/sai-kumar-postgraduate" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <!-- <a href="https://github.com/brijeshpandit" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a> -->
+
+                            <!-- <a href="assets/resumes/Ujjwal _CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a> -->
+                        </div>
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Sections Go Here -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-300 dark:bg-gray-700 p-4 mt-8">
+        <div class="container mx-auto text-center text-gray-600 dark:text-gray-300">
+            <!-- Your footer content goes here -->
+            <p>&copy; Centre for Ocean, River, Atmospheric and Land Sciences, IIT Kharagpur</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
