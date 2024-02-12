@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="'image/svg+xml" href="assets/photos/IIT_Kharagpur_Logo.svg">
+    <title>Students - CORAL</title>
+
+    <!-- Include Tailwind CSS stylesheet -->
+    <link href="css/output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="transition duration-500 ease-in-out bg-white dark:bg-gray-800 text-black dark:text-white">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 font-poppins">
+        <div class="w-auto flex flex-wrap items-center justify-between mx-5 p-4 md:p-6">
+            <a href="https://www.iitkgp.ac.in/department/CL" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/photos/Coral Name.png" class="h-8 md:h-12" alt="Coral Logo" />
+                <!-- Adjust logo size for different screens -->
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <!-- This button should toggle visibility of menu items on small screens -->
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 20">
+                    <!-- Adjust icon size -->
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h22M1 10h22M1 19h22"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0">
+                    <li>
+                        <a href="/" class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Home</a>
+                    </li>
+                    <li class="navlink batches">
+                        <a class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Batch</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="/students" class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
+                                    Batch 2022
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/students" class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">
+                                    Batch 2023
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="assets/CORAL Brochure.pdf" target="_blank" class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Brochure</a>
+                    </li>
+                    <li>
+                        <a href="contact" class="block py-2 px-4 text-sm md:text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select the button and the menu
+            const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+            const menu = document.getElementById('navbar-default');
+    
+            // Listen for a click on the button
+            toggleButton.addEventListener('click', function () {
+                // Toggle the 'hidden' class on the menu
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
+    
+
+    <!-- Main Content Area -->
+    <div class="container mx-auto">
+
+        <!-- 2023-2025 Batch Student's Section -->
+        <section class="bg-white dark:bg-gray-900">
+            <div class="container px-4 sm:px-6 lg:px-8 py-8 mx-auto">
+                <div class="title">
+                    <!-- Change the link as required -->
+                    <a href="https://www.iitkgp.ac.in/department/CL">
+                 <div class="arr-left"><div></div> </div></a>
+                 <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-800 capitalize dark:text-white">Batch <span class="text-blue-500">2023-25</span></h1>
+                 <a href="https://www.iitkgp.ac.in/department/CL">
+                    <div class="arr-right"><div></div> </div></a>
+                </div>
+                
+                <p class="max-w-xl sm:max-w-2xl md:max-w-3xl mx-auto my-6 text-center text-sm md:text-base text-gray-500 dark:text-gray-300">
+                    Showcasing Our Emerging Talent: Unveiling a Mosaic of Accomplishments and Ongoing Endeavors.
+                </p>
+        
+                <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 xl:grid-cols-2">
+                    
+                    <!-- Thejshri A -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/JuniorsPhotos/Thejshri_Photo.png" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Thejshri A</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “A green enthusiast, strongly believing in blending innovation with a results-driven mindset to navigate challenges and achieve impactful outcomes.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Aerobiology: Correlating Distribution Pattern of Pollen with Satellite Derived EVI</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Studied the variation of Pollen calendar in Chandigarh for 2018-2020 and extracted Pollen Concentration Data to depict peak pollen seasons. And mapped the Enhanced Vegetation Index (EVI) over Chandigarh region using Sentinel Data in Google Earth Engine with JavaScript as the coding language to correlate the distribution pattern of Pollen with EVI
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/thejshri-anand-04444a1a0" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <!-- github -->
+                            <a href="https://github.com/Thejshri-A" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/Thejshri_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ayush Nayan -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/JuniorsPhotos/Ayush_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Ayush Nayan</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">“A firm believer of the notion that patience, gratitude & hardwork will always get me results while I can enjoy the process. I am an Engineer who is constantly looking for solutions and learning new things on the way.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">Spatio - Temporal Variations of Sea Surface Temperature in the Bay of Bengal</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            82 years of High resolution SST Climatology data was plotted to understand how sea surface temperature of Bay of Bengal affected the weather and climate of the Indian Sub continent.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <a href="linkedin.com/in/ayush-nayan-2b8719164" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/Aayush_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Boda Kalyan Singh -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/JuniorsPhotos/KalyanSingh_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Boda Kalyan Singh</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Student at IIT KHARAGPUR, Data science”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Flood forecasting of Bihar region using Google Earth engine.</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Using the Google Earth engine software forecasted data of flood such that the data gives the result of which places are majorly affected by flood, the out come gives the early signs for taking actions against flood rescue
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin Link -->
+                            <a href="https://www.linkedin.com/in/boda-kalyan-singh-4954011a3" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            
+                            <!-- Github Link -->
+                            <a href="https://github.com/BodaKalyanSingh" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="GitHub" title="GitHub Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/KalyanSingh_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Yenugula Rashmitha -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="assets/JuniorsPhotos/Rashmitha_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white">Yenugula Rashmitha</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    "I am a master's student at IIT Kharagpur.
+                                    I am interested in studying the interdependency of climate change factors and sustainable urban sprawl."</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300 normal-case">
+                            Analysing sustainability of Kolkata Urban Sprawl through UHI</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            To study the sustainability of urban sprawl of the city of Kolkata through annual and seasonal variation of Urban Heat Island and concluding with the nature-based solutions for further sustainable expansion of cities.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin Link -->
+                            <a href="linkedin.com/in/yenugula-rashmitha-a2b5591b6" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                           
+                            <a href="assets/JuniorsResume/Rashmitha_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Debangshu Bose   -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/JuniorsPhotos/Debangshu_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Debangshu Bose </h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “M.Tech student of IIT Kharagpur in Earth System Science and Technology. 
+                                    With a Master's degree in Mathematics, I leverage my strong background of Mathematics and statistics coupled with coding skills in Python to venture into the field of Data Science and Machine Learning.”
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Lithospheric Mantle below Southern Norway.</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            To investigate the thermal structure and density of the lithospheric mantle below Southern Norway using two complementary methods: Geoid Isostasy Method and Inversion of Seismic-wave velocity to temperature.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/debangshu-bose-1b1093238" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/Debangshu_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>                    
+                    
+                    <!-- Shreyash Lahane  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/JuniorsPhotos/Shreyash_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Shreyash Lahane</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “Student at IIT Kharagpur, keen to learn new things and looking for exigent opportunities.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Spatio-Temporal variations of SST in the Arabian Sea</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Analysed and plotted various figures and maps for 82 years of high resolution climatology Sea Surface Temperature data to understand extreme weather anomalies using MATLAB.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://in.linkedin.com/in/shreyash-lahane-2871b626b" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/Shreyash_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Moarenla Y Longkumer  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/JuniorsPhotos/Moarenla_Photo1.JPG" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Moarenla Y Longkumer</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “M.Tech Scholar at IIT Kharagpur”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Correlation of Satellite based EVI data with Ground based data with implications to Health Sector</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Analyzed satellite based Enhanced Vegetation Index data and corelated it with ground based data of pollen distribution pattern, with implications to Health sector using of Google Earth Engine.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/moarenlaylongkumer/" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/resumes/Pallabi CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Deevi Lakshmi Teja Sree  -->
+                    <div class="px-12 py-8 transition-colors duration-300 transform border border-gray-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600 dark:border-gray-700 dark:hover:border-transparent">
+                        <div class="flex flex-col sm:-mx-4 sm:flex-row">
+                            <img class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" 
+                            src="assets/JuniorsPhotos/DeeviTejasree_Photo.jpg" alt="">
+        
+                            <div class="mt-4 sm:mx-4 sm:mt-0">
+                                <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-hover:text-white capitalize">
+                                    Deevi Lakshmi Teja Sree</h1>
+        
+                                <p class="text-sm italic mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                                    “I'm Optimistic, Ambitious, hard working and driven. 
+                                    I'm passionate about my work. I complete the tasks before the deadlines. 
+                                    I'm a perfectionist, I work hard to complete the tasks perfectly in time.”</p>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 font-bold text-gray-500 dark:text-gray-300 group-hover:text-gray-300">
+                            Landslide susceptibility mapping of Northwestern Himalayan region.</p>
+                        
+                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 text-justify">
+                            Landslides are the most common natural disasters in Himalayan regions. using Google Earth Engine landslide susceptibility regions are mapped by collecting various datas that are needed to predict the landslide prone areas. 
+                            Weighted overlay method is used in mapping the susceptible regions.
+                        </p>
+
+                        <div class="flex mt-4 -mx-2">
+                            <!-- Linkedin -->
+                            <a href="https://www.linkedin.com/in/deevi-tejasree-514a53272" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.3292112,2 C21.2519624,2 22,2.74752185 22,3.67078882 L22,20.3292112 C22,21.2519624 21.2524781,22 20.3292112,22 L3.67078882,22 C2.74803764,22 2,21.2524781 2,20.3292112 L2,3.67078882 C2,2.74803764 2.74752185,2 3.67078882,2 L20.3292112,2 Z M15.51875,9.5 C14.0993287,9.5 13.128125,10.127356 12.6956992,10.8562567 L12.625,10.9858333 L12.625,9.625 L9.91666667,9.625 L9.91666667,19.2083333 L12.8333333,19.2083333 L12.8333333,14.56625 C12.8333333,13.0104167 13.40625,12.0208333 14.7833333,12.0208333 C15.7330797,12.0208333 16.1315784,12.8606664 16.1644352,14.3580086 L16.1666667,14.56625 L16.1666667,19.2083333 L19.0833333,19.2083333 L19.0833333,13.9154167 C19.0833333,11.0575 18.3995833,9.5 15.51875,9.5 Z M7.83333333,9.5 L4.91666667,9.5 L4.91666667,19.0833333 L7.83333333,19.0833333 L7.83333333,9.5 Z M6.375,4.5 C5.33958333,4.5 4.5,5.33958333 4.5,6.375 C4.5,7.41041667 5.33958333,8.25 6.375,8.25 C7.41041667,8.25 8.25,7.41041667 8.25,6.375 C8.25,5.33958333 7.41041667,4.5 6.375,4.5 Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="assets/JuniorsResume/DeeviTejasree_CV.pdf" target="_blank" class="ml-auto relative block w-auto px-3 py-0 overflow-hidden text-base font-semibold text-center text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white">
+                                Resume
+                            </a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-300 dark:bg-gray-700 p-4 mt-8">
+        <div class="container mx-auto text-center text-gray-600 dark:text-gray-300">
+            <!-- Your footer content goes here -->
+            <p>&copy; Centre for Ocean, River, Atmosphere and Land Sciences, IIT Kharagpur</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
